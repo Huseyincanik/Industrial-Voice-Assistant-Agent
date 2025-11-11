@@ -29,18 +29,18 @@ from qdrant_client.models import Filter, FieldCondition, MatchValue
 # ==============================================================================
 # --- 1. KONFİGÜRASYON AYARLARI ---
 # ==============================================================================
-RAG_BASE_PATH = r"C:\Users\PC1\Desktop\get_agent_log\rag"
+RAG_BASE_PATH = r""
 QDRANT_DB_PATH = os.path.join(RAG_BASE_PATH, "qdrant_db")
 QDRANT_COLLECTION_NAME = "machine_manuals"
 EMBEDDING_MODEL_NAME = 'intfloat/multilingual-e5-large'
-LOCAL_LLM_BASE_URL = "http://192.168.0.45:1234/v1"
+LOCAL_LLM_BASE_URL = ""
 LOCAL_LLM_API_KEY = "not-needed"
-LOCAL_LLM_MODEL_ID = "gemma-3-12b-it"
+LOCAL_LLM_MODEL_ID = ""
 SIMILARITY_THRESHOLD = 0.70
-DB_SERVER = r'HUSEYINC\SQLEXPRESS'
-DB_DATABASE = 'CoralCare'
-DB_USERNAME = 'sa'
-DB_PASSWORD = '1234' 
+DB_SERVER = r''
+DB_DATABASE = ''
+DB_USERNAME = ''
+DB_PASSWORD = '' 
 DB_CONNECTION_STRING = (f'DRIVER={{ODBC Driver 17 for SQL Server}};'f'SERVER={DB_SERVER};'f'DATABASE={DB_DATABASE};'f'UID={DB_USERNAME};'f'PWD={DB_PASSWORD};')
 
 active_machine_id= 1
@@ -575,4 +575,5 @@ def main():
             speak("Üzgünüm, beklenmedik bir hata oluştu. Lütfen tekrar deneyin.")
 
 if __name__ == "__main__":
+
     main()
