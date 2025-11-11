@@ -226,13 +226,7 @@ get_agent_log/
 - **TTS**: Google Text-to-Speech (gTTS)
 - **Language**: Turkish (tr-TR)
 
-## 🤝 Contributing
 
-1. Fork
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push your branch (`git push origin feature/amazing-feature`)
-5. Create a Pull Request
 
 ## 📝 License
 
