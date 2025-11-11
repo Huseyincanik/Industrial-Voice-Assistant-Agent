@@ -11,11 +11,11 @@ from typing import List, Any
 
 # --- Konfigürasyon Ayarları ---
 # rag_pipeline.py dosyasındaki ayarlarla aynı olmalı
-DOCUMENTS_PATH = r"C:\Users\PC1\Desktop\get_agent_log\documents"
+DOCUMENTS_PATH = r""
 EMBEDDING_MODEL_NAME = 'intfloat/multilingual-e5-large'
 QDRANT_DB_PATH = "./qdrant_db"  # Veritabanının kaydedileceği klasör
 QDRANT_COLLECTION_NAME = "machine_manuals"
-RAG_BASE_PATH = r"C:\Users\PC1\Desktop\get_agent_log\rag"
+RAG_BASE_PATH = r""
 
 def create_and_populate_vectordb():
     """
@@ -72,4 +72,5 @@ def create_and_populate_vectordb():
 if __name__ == "__main__":
     create_and_populate_vectordb()
     print("\nİşlem tamamlandı. 'qdrant_db' klasörü içinde kalıcı veritabanınız yeniden oluşturuldu.")
+
     print("Artık 'agent4.py' dosyasını çalıştırarak test edebilirsiniz.")
