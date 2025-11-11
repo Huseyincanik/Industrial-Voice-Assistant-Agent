@@ -8,7 +8,7 @@ import numpy as np
 import time
 
 # --- Konfigürasyon Ayarları ---
-DOCUMENTS_PATH = r"C:\Users\PC1\Desktop\get_agent_log\documents"
+DOCUMENTS_PATH = r""
 EMBEDDING_MODEL_NAME = 'intfloat/multilingual-e5-large'
 
 # --- YENİ FONKSİYON: Makine Adı Çıkarma ---
@@ -276,4 +276,5 @@ if __name__ == "__main__":
 
 
 # if __name__ == "__main__":
+
 #     main()
