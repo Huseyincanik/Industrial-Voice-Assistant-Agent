@@ -124,7 +124,7 @@ DB_USERNAME = ''
 DB_PASSWORD = ''
 
 # RAG Settings
-RAG_BASE_PATH = r"C:\Users\PC1\Desktop\get_agent_log\rag"
+RAG_BASE_PATH = r""
 EMBEDDING_MODEL_NAME = 'intfloat/multilingual-e5-large'
 ```
 
