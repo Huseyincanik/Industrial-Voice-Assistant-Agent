@@ -5,8 +5,8 @@ from contextlib import redirect_stdout, redirect_stderr
 import time
 import keyboard
 import re
-import tempfile  ### YENİ EKLENDİ ###
-import whisper   ### YENİ EKLENDİ ###
+import tempfile 
+import whisper   
 
 import speech_recognition as sr # STT (Mikrofon dinleme) için hala gerekli
 from gtts import gTTS             # TTS için eklendi
