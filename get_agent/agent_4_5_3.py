@@ -46,7 +46,7 @@ DB_CONNECTION_STRING = (f'DRIVER={{ODBC Driver 17 for SQL Server}};'f'SERVER={DB
 active_machine_id= 1
 
 # ==============================================================================
-# --- YENİ SES FONKSİYONLARI ---
+# --- SES FONKSİYONLARI ---
 # ==============================================================================
 
 def clean_text_for_tts(text):
@@ -125,8 +125,8 @@ def speak(text):
             except PermissionError:
                 print(f"❌ {filename} silinemedi, dosya kullanımda olabilir.")
 
-# ### DEĞİŞTİRİLDİ ###
-# --- WHISPER (OFFLINE) KULLANACAK ŞEKİLDE GÜNCELLENMİŞ 'listen_for_command' FONKSİYONU ---
+#
+
 def listen_for_command():
     """'V' tuşuna basılı tutulduğunda mikrofonu dinler ve Whisper ile OFFLINE olarak konuşmayı metne çevirir."""
     r = sr.Recognizer()
@@ -186,7 +186,7 @@ def listen_for_command():
             except Exception as del_e:
                 print(f"❌ Geçici ses dosyası silinirken hata: {del_e}")
         return ""
-    # --- Değişiklik sonu ---
+   
 
 
 # ==============================================================================
@@ -350,8 +350,7 @@ def create_sql_agent():
 
 
 # ==============================================================================
-# --- 5. YARDIMCI BİLEŞENLER VE ZİNCİRLER ---
-# (Değişiklik yok)
+# --- 5. YARDIMCI BİLEŞENLER VE ZİNCİRLER ---
 # ==============================================================================
 
 TURKISH_WORDS_TO_NUMS = {
